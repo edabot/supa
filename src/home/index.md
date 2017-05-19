@@ -30,7 +30,7 @@ The Big Picture calendar has a simple solution to all of this: put the months to
 
 ![alt text][heldcalendar]
 
-[heldcalendar]: http://supamoto.co/wp-content/uploads/2015/03/holding_mockup_2436_orig-1024x1024.jpg "Logo Title Text 2"
+[heldcalendar]: http://supamoto.co/wp-content/uploads/2015/03/holding_mockup_2436_orig-1024x1024.jpg "human for scale"
 
 It seems like a small change, but it can have a big impact. It cuts down on the time you spend trying to make the calendar fit the way you see time.
 

@@ -12,6 +12,7 @@ import React from 'react';
 import Layout from '../../components/Layout';
 import s from './styles.css';
 import { title, html } from './index.md';
+import App from './App';
 
 class AboutPage extends React.Component {
 
@@ -22,11 +23,7 @@ class AboutPage extends React.Component {
   render() {
     return (
       <Layout className={s.content}>
-        <h1>{title}</h1>
-        <div
-          // eslint-disable-next-line react/no-danger
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
+        <App />
       </Layout>
     );
   }
