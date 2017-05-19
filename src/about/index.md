@@ -2,67 +2,27 @@
 title: About Us
 ---
 
-## Cadme comitum fecere
 
-Lorem markdownum velis auras figuram spes solebat spectabat, cum alium,
-plenissima aratri visae herbarum in corpore silvas consumpta. Subito virgae nec
-paratae flexit et niveae repperit erat paratu cum albis steterat conclamat hic!
+My name is Ed Lewis and in 2012 I got really upset about calendars. The problem had been brewing for several years, but that was the tipping point for me.
 
-Nocte suae ligat! *Si* nitidum pervia, illa tua, ab minimo pasci dabitur? In
-fictus concurreret pennis, illis cum accipe rogavi in et nostro cum lacertis
-hostibus ab saxo ne. Genibusque vixque; sine videt terribili lucos ipsum vobis
-resque, et suum pietatis fulvis, est velle. Semele oscula ferat frigidus mactata
-montes, es me parari, piae.
+I just didn’t understand why calendars were so artificial and didn’t work the way I wanted them to work. I started to get obsessed with why others were so obsessed with the month as a unit of time. I also kept this to myself as I didn’t think anyone else would care.
 
-## Inflataque ait leves frigida
+After talking to a friend about it we got to the inevitable conclusion when he said, “well, why don’t you make one you want?”
 
-Letum per ipsa nostro animae, mari illuc in levi corpus aestibus excussam
-deflentem sic cuius. Venere dedit illa cui in quo senecta artus bella inficit,
-Achaica. Videbatur crinem resonantia alto dea umida dicitur igne; meus signa
-habet; est. Cognovit coepta: similes fugis: habuissem votivi liquida: ictus visi
-nostra me Adoni.
+He was right. It was time to move beyond frustration with why I couldn’t find what I wanted and to just make it myself.
 
-## Laedar cum margine quoque
+I printed it up and put it on my wall. I liked it.
 
-Quam dato ullis, acer venturi volantes! Tuam non non cursu acta hic, novem
-nutrit, in sidera viscera iam fontes tempora, omnes. Saturnius artus inquit,
-conatoque erectos lenius, carinae, ora est infamia elige per Medusaei induitur.
-Quem quem ab postquam tunc frondescere nodis capiam labique. Voluere luce
-Semeles.
+After a couple weeks someone said, “well, why don’t you put that up on Kickstarter?”
 
-```
-    if (delete(digital, hibernateSoft, dynamicExcelVpn) > io_secondary_led /
-            84) {
-        disk = load;
-        orientationPci.matrix_laptop(modelSsdTweet);
-    } else {
-        kdeEmoticonLed.mebibyte_algorithm_domain(2,
-                hackerCtr.rom_iso_desktop.scarewarePrimaryBankruptcy(station,
-                disk_mask_matrix, restore_crt));
-        cameraSpyware(4, multitasking(-3, log_dfs_controller));
-        menuCisc.swappable -= w(mount_vle_unicode, 5);
-    }
-    var optic_spider = newbieFunctionThick(-3, esportsKbpsUnix);
-    var dvd_ctp_resolution = dithering;
-```
+So I did and hundreds of people backed it. I was stunned. There are other calendar people out there?
 
-## Usus fixurus illi petunt
+This continued on with Kickstarter campaigns in 2013 and 2014. Each one a big success and previous backers were coming back for more.
 
-Domosque tune amas mihi adhuc et *alter per* suasque versavitque iners
-crescentemque nomen verba nunc. Acervos hinc natus si habet. Et cervix imago
-quod! Arduus dolet!
+This year I’ve switched to a print-on-demand model. There were just too many different versions that people were asking for. This way I can try out a lot of new ideas without having to worry about inventory.
 
-```
-    cpcDdrCommand.window(moodleAlpha, im, server_alpha.doubleVrmlMonochrome(
-            iosBar - -2, white_dual, ad(2, 94, 83)));
-    mbps_typeface_publishing.bit.host_flash_capacity(click(90,
-            cyberspace_srgb_pup - mpeg, marketing_trackback +
-            table_plagiarism_domain));
-    syn_e = powerExtension * defragmentNntpOsd(alertOutputNode(pop,
-            pageResponsiveDrive));
-    method -= switch_newsgroup_flaming;
-```
+So if you want to see a different version or just want to geek out about calendars, feel free to email me at ed@supamoto.co. I’ll get back to you.
 
-Aliquid mansura arida altismunera **in illi**. Dignus vir pontum *crimen
-versabat* carpunt omnes rotis Canentem erant in Oebalio, et manu senecta
-iungere. Prima diurnis!
+Thank you,
+
+Ed

@@ -8,20 +8,12 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
-import React, { PropTypes } from 'react';
+import React from 'react';
 import Layout from '../../components/Layout';
 import s from './styles.css';
 import { title, html } from './index.md';
 
-class HomePage extends React.Component {
-
-  static propTypes = {
-    articles: PropTypes.arrayOf(PropTypes.shape({
-      url: PropTypes.string.isRequired,
-      title: PropTypes.string.isRequired,
-      author: PropTypes.string.isRequired,
-    }).isRequired).isRequired,
-  };
+class AboutPage extends React.Component {
 
   componentDidMount() {
     document.title = title;
@@ -30,15 +22,15 @@ class HomePage extends React.Component {
   render() {
     return (
       <Layout className={s.content}>
+        <h1>{title}</h1>
         <div
           // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{ __html: html }}
         />
-        
       </Layout>
     );
   }
 
 }
 
-export default HomePage;
+export default AboutPage;
