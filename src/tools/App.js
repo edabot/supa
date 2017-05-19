@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import './App.css';
 import moment from 'moment-timezone';
-
+import './App.css';
 import Day from './Day.js';
 
 class App extends Component {

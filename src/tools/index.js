@@ -11,6 +11,7 @@
 import React from 'react';
 import Layout from '../../components/Layout';
 import s from './styles.css';
+import './App.css';
 import { title, html } from './index.md';
 import App from './App';
 
