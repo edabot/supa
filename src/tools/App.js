@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
+import app from './App.css';
 import moment from 'moment-timezone';
-import './App.css';
+
 import Day from './Day.js';
 
 class App extends Component {
@@ -40,10 +41,10 @@ class App extends Component {
 
     dayNames() {
         return (
-          <div className="day-names">
+          <div className={app.day_names}>
             {this.state.dayNames.map(day => {
                 return (
-                  <div key={day} className="day-name">
+                  <div key={day} className={app.day_name}>
                     { day }
                   </div>
                 )
@@ -76,7 +77,7 @@ class App extends Component {
     showWeeks(){
       if (this.state.weeks[0]) {
         return(
-          <div className="calendar">
+          <div className={app.calendar}>
             <Week key={this.state.weeks[0][0].dayOfYear()}
                   week={this.state.weeks[0]}
                   allText={this.state.text}
@@ -107,48 +108,48 @@ class App extends Component {
       }
 
       return (
-        <div className="month-range">
+        <div className={app.month_range}>
           { text }
         </div>
 
       )
     }
     toggleLayout() {
-      document.getElementsByClassName("super")[0].classList.toggle("rotator")
-      document.getElementsByClassName("container")[0].classList.toggle("landscape")
-      document.getElementsByClassName("container")[0].classList.toggle("portrait")
-      document.getElementsByClassName("orientation")[0].classList.toggle("active")
-      document.getElementsByClassName("orientation")[1].classList.toggle("active")
+      document.getElementsBystyleName("super")[0].classList.toggle("rotator")
+      document.getElementsBystyleName("container")[0].classList.toggle("landscape")
+      document.getElementsBystyleName("container")[0].classList.toggle("portrait")
+      document.getElementsBystyleName("orientation")[0].classList.toggle("active")
+      document.getElementsBystyleName("orientation")[1].classList.toggle("active")
     }
 
   render() {
     return (
-      <div className="App">
-        <div className="controls">
-          <div className="buttons">
-            <div className="button-group">
-              <button className="btn shift" onClick={ this.moveWeek.bind(this) } value="-1">back 1 week</button>
-              <button className="btn shift" onClick={ this.moveWeek.bind(this) } value="1">forward 1 week</button>
+      <div className={app.App}>
+        <div className={app.controls}>
+          <div className={app.buttons}>
+            <div className={app.button_group}>
+              <button className={app.shifter } onClick={ this.moveWeek.bind(this) } value="-1">back 1 week</button>
+              <button className={app.shifter } onClick={ this.moveWeek.bind(this) } value="1">forward 1 week</button>
             </div>
-            <div className="button-group">
-              <button className="btn scale" onClick={ this.numWeeks.bind(this) } value="-1">1 less week</button>
-              <button className="btn scale" onClick={ this.numWeeks.bind(this) } value="1">1 more week</button>
+            <div className={app.button_group}>
+              <button className={app.sizer} onClick={ this.numWeeks.bind(this) } value="-1">1 less week</button>
+              <button className={app.sizer} onClick={ this.numWeeks.bind(this) } value="1">1 more week</button>
             </div>
-            <div className="button-group">
-              <button className="btn orientation active" onClick={ this.toggleLayout } >portrait</button>
-              <button className="btn orientation" onClick={ this.toggleLayout } >landscape</button>
+            <div className={app.button_group}>
+              <button className={app.orientation} onClick={ this.toggleLayout } >portrait</button>
+              <button className={app.orientation} onClick={ this.toggleLayout } >landscape</button>
             </div>
-            <div className="button-group">
-                <button className="btn print" onClick={ window.print } >print</button>
+            <div className={app.button_group}>
+                <button className={app.btn} onClick={ window.print } >print</button>
             </div>
           </div>
         </div>
-        <div className="super">
-          <div className="container portrait">
+        <div className={app.super}>
+          <div className={app.portrait}>
               { this.monthRange() }
               { this.dayNames() }
               { this.showWeeks() }
-              <div className="footer">supamoto.co</div>
+              <div className={app.footer}>supamoto.co</div>
             </div>
         </div>
       </div>
@@ -159,7 +160,7 @@ class App extends Component {
 class Week extends React.Component {
   render() {
     return (
-      <div className="week">
+      <div className={app.week}>
           { this.props.week.map(day => {
                 let dateText = day.format();
                 return <Day key={dateText}

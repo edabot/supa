@@ -15,6 +15,7 @@
   padding: 0 30px;
 }
 .portrait {
+  composes: container;
   width: 60vw;
   height: 80vw;
   margin: 0 auto;
@@ -68,7 +69,7 @@
   justify-content: center;
 }
 
-.button-group {
+.button_group {
   margin: 0 10px;
 }
 
@@ -84,23 +85,26 @@
     border-radius: 2px;
 }
 
-.shift {
-   background-color: #4CAF50;
+.shifter {
+  composes: btn;
+  background-color: #4CAF50;
 }
 
-.scale {
+.sizer {
+  composes: btn;
   background-color: #008CBA;
 }
 
 .orientation {
-    background-color: #dddddd;
+  composes: btn;
+  background-color: #dddddd;
 }
 
 .active{
     background-color: #008CBA;
 }
 
-.month-range {
+.month_range {
   font-size: 2em;
   padding-bottom: 20px;
   height: 5%;
@@ -131,6 +135,7 @@
 
 .weekend {
   background-color: #eee;
+  height: 100%
 }
 
 .date {
@@ -140,16 +145,16 @@
     height: 20px;
 }
 
-.first-week {
+.first_week {
   margin-top: 2px;
 }
 
-.first-day {
+.first_day {
   margin-left: 2px;
   width: 99%;
 }
 
-.day-names {
+.day_names {
   font-size: 1.4vw;
   width: 100%;
   display: flex;
@@ -158,7 +163,7 @@
   margin: 0 auto;
 }
 
-.day-name {
+.day_name {
   width: 100%;
 }
 

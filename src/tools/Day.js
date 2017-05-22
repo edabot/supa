@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
+import a from './App.css';
 
 class Day extends React.Component {
 
@@ -13,26 +14,26 @@ class Day extends React.Component {
           firstWeek = false,
           firstDay = false;
       if ( dayOfWeek === "Sa" || dayOfWeek === "Su" ) {
-        weekend = true
+        weekend = a.weekend
       }
-      if ( this.props.day.date() < 8 && !this.props.firstWeek) { firstWeek = true; }
-      if ( this.props.day.date() === 1 && this.props.day.format("d") !== "0" ) { firstDay = true; }
-      var classes = classNames({
-          'day': true,
-          'weekend': weekend,
-          'first-week': firstWeek,
-          'first-day': firstDay
-      });
-        return (
-            <div className={ classes }>
-                <div className="date">
-                    { this.props.day.format("D") }
+      if ( this.props.day.date() < 8 && !this.props.firstWeek) { firstWeek = a.first_week; }
+      if ( this.props.day.date() === 1 && this.props.day.format("d") !== "0" ) { firstDay = a.first_day; }
+      return (
+          <div className={ a.day }>
+            <div className={ weekend }>
+              <div className={ firstWeek }>
+                <div className={ firstDay }>
+                  <div className={a.date}>
+                      { this.props.day.format("D") }
+                  </div>
+                  <div className={a.textarea}>
+                      <textarea value={this.props.dayText} onChange={this.onChange.bind(this)}/>
+                  </div>
                 </div>
-                <div className="textarea">
-                    <textarea value={this.props.dayText} onChange={this.onChange.bind(this)}/>
-                </div>
+              </div>
             </div>
-        )
+          </div>
+      )
     }
 }
 
