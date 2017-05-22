@@ -1,0 +1,5 @@
+@media print {
+  .footer_logo {
+    display: none;
+  }
+}

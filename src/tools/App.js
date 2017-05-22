@@ -14,7 +14,8 @@ class App extends Component {
           dayNames: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
           weekStart: "Sun",
           weekCount: 4,
-          text: {}
+          text: {},
+          portrait: true
       };
     }
 
@@ -114,15 +115,24 @@ class App extends Component {
 
       )
     }
-    toggleLayout() {
-      document.getElementsBystyleName("super")[0].classList.toggle("rotator")
-      document.getElementsBystyleName("container")[0].classList.toggle("landscape")
-      document.getElementsBystyleName("container")[0].classList.toggle("portrait")
-      document.getElementsBystyleName("orientation")[0].classList.toggle("active")
-      document.getElementsBystyleName("orientation")[1].classList.toggle("active")
-    }
+
+  togglePortrait() {
+    this.setState({portrait: true});
+    console.log('toggled portrait')
+  }
+
+  toggleLandscape() {
+    this.setState({portrait: false});
+    console.log('toggled landscape')
+  }
 
   render() {
+    var orientationStyle = app.portrait,
+      rotator = null;
+    if ( !this.state.portrait ) {
+      orientationStyle = app.landscape;
+      rotator = app.rotator;
+    }
     return (
       <div className={app.App}>
         <div className={app.controls}>
@@ -136,16 +146,16 @@ class App extends Component {
               <button className={app.sizer} onClick={ this.numWeeks.bind(this) } value="1">1 more week</button>
             </div>
             <div className={app.button_group}>
-              <button className={app.orientation} onClick={ this.toggleLayout } >portrait</button>
-              <button className={app.orientation} onClick={ this.toggleLayout } >landscape</button>
+              <button className={app.orientation} onClick={ this.togglePortrait.bind(this) } >portrait</button>
+              <button className={app.orientation} onClick={ this.toggleLandscape.bind(this) } >landscape</button>
             </div>
             <div className={app.button_group}>
                 <button className={app.btn} onClick={ window.print } >print</button>
             </div>
           </div>
         </div>
-        <div className={app.super}>
-          <div className={app.portrait}>
+        <div className={rotator}>
+          <div className={orientationStyle}>
               { this.monthRange() }
               { this.dayNames() }
               { this.showWeeks() }
