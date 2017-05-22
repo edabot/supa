@@ -25,42 +25,6 @@
     visibility: hidden;
 }
 
-@page {
-    size: letter;
-}
-
-@media print {
-
-    .container {
-        padding: 0;
-        border: none;
-        box-shadow: none;
-    }
-
-  .rotator {
-    transform: rotate(90deg);
-  }
-  .controls {
-    display: none;
-  }
-  .landscape {
-    width: 9in;
-    height: 7.2in;
-    margin: 0 auto;
-    padding: 0 30px;
-  }
-  .portrait {
-    width: 8in;
-    height: 9.5in;
-    margin: 0 auto;
-  }
-  .footer {
-      visibility: visible;
-      margin: 15px auto 0 auto;
-      font-size: 12px;
-  }
-}
-
 .buttons {
   display: flex;
   flex-wrap: wrap;
@@ -185,4 +149,40 @@ textarea {
     width: 80%;
     height: 90%;
     margin-top: 10px;
+}
+
+@page {
+  size: letter;
+}
+
+@media print {
+
+  .container {
+    padding: 0;
+    border: none;
+    box-shadow: none;
+  }
+
+  .rotator {
+    transform: rotate(90deg);
+  }
+  .controls {
+    display: none;
+  }
+  .landscape {
+    width: 9in;
+    height: 7.2in;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+  .portrait {
+    width: 7.2in;
+    height: 9.5in;
+    margin: 0 auto;
+  }
+  .footer {
+    visibility: visible;
+    margin: 15px auto 0 auto;
+    font-size: 12px;
+  }
 }
