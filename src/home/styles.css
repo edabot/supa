@@ -8,8 +8,34 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
-@media screen and (max-width: 1024px) {
+@media screen {
   .content {
+    max-width: 800px;
     padding: 0 16px;
+    font-size: 18px;
+    font-family: Arial;
   }
+}
+
+p {
+  font-family: "Merriweather", serif;
+  font-size: 1.1em;
+  line-height: 1.8em;
+  font-weight: 400;
+  color: #7d7d7b;
+}
+
+h2 {
+  font-size: 1.8em;
+  color: #666;
+}
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #77a7b9;
+  text-align: center;
 }
