@@ -9,10 +9,10 @@
 }
 
 .landscape {
+  composes: container;
   width: 80vw;
   height: 60vw;
   margin: 0 auto;
-  padding: 0 30px;
 }
 .portrait {
   composes: container;
@@ -100,8 +100,9 @@
   background-color: #dddddd;
 }
 
-.active{
-    background-color: #008CBA;
+.orientation_active {
+  composes: btn;
+  background-color: #008CBA;
 }
 
 .month_range {

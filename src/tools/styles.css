@@ -27,13 +27,13 @@
 .landscape {
   width: 80vw;
   height: 60vw;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
   padding: 0 30px;
 }
 .portrait {
   width: 60vw;
   height: 80vw;
-  margin: 0 auto;
+  margin: 0 auto 10px auto;
 }
 
 .footer {

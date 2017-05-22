@@ -41,18 +41,17 @@ class App extends Component {
     }
 
     dayNames() {
-        return (
-          <div className={app.day_names}>
-            {this.state.dayNames.map(day => {
-                return (
-                  <div key={day} className={app.day_name}>
-                    { day }
-                  </div>
-                )
-                ;
-            })}
-          </div>
-        )
+      return (
+        <div className={app.day_names}>
+          {this.state.dayNames.map(day => {
+            return (
+              <div key={day} className={app.day_name}>
+                { day }
+              </div>
+            );
+          })}
+        </div>
+      )
     }
 
     moveWeek(e) {
@@ -118,20 +117,22 @@ class App extends Component {
 
   togglePortrait() {
     this.setState({portrait: true});
-    console.log('toggled portrait')
   }
 
   toggleLandscape() {
     this.setState({portrait: false});
-    console.log('toggled landscape')
   }
 
   render() {
     var orientationStyle = app.portrait,
+      portraitButton = app.orientation_active,
+      landscapeButton = app.orientation,
       rotator = null;
     if ( !this.state.portrait ) {
       orientationStyle = app.landscape;
       rotator = app.rotator;
+      portraitButton = app.orientation;
+      landscapeButton = app.orientation_active;
     }
     return (
       <div className={app.App}>
@@ -146,8 +147,8 @@ class App extends Component {
               <button className={app.sizer} onClick={ this.numWeeks.bind(this) } value="1">1 more week</button>
             </div>
             <div className={app.button_group}>
-              <button className={app.orientation} onClick={ this.togglePortrait.bind(this) } >portrait</button>
-              <button className={app.orientation} onClick={ this.toggleLandscape.bind(this) } >landscape</button>
+              <button className={portraitButton} onClick={ this.togglePortrait.bind(this) } >portrait</button>
+              <button className={landscapeButton} onClick={ this.toggleLandscape.bind(this) } >landscape</button>
             </div>
             <div className={app.button_group}>
                 <button className={app.btn} onClick={ window.print } >print</button>
